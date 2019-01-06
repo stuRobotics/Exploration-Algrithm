@@ -1,0 +1,7 @@
+<launch>
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find trajectory)/config/trajectory.rviz" />	
+	<node name="trajectory_publisher" pkg="trajectory" type="trajectory_pub_node" />
+	<node name="route_publisher" pkg="trajectory" type="route_pub_node" />
+	<!--node name="odom_publisher" pkg="trajectory" type="odom_pub_node" /-->	
+	
+</launch>
