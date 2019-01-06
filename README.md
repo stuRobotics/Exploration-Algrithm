@@ -6,7 +6,7 @@
 
 clone it into your working space and use compile it
 ```Bash
-cd XX_ws
+cd ~/XX_ws
 catkin_make
 ```
 then add it to the source
