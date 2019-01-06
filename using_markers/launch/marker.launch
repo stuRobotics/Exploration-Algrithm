@@ -1,0 +1,3 @@
+<launch>	
+	<node name="trajectory_publisher" pkg="trajectory" type="trajectory_pub_node" />
+</launch>
