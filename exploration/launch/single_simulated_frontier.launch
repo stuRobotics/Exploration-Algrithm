@@ -1,0 +1,25 @@
+<!--  Launch file for signle robot on Gazebo -->
+<launch>
+<env name="GAZEBO_RESOURCE_PATH" value="$(find nearest_frontier_planner)/launch/includes/meshes"/>
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+	<arg name="use_sim_time" value="true"/>
+	<arg name="debug" value="false"/>
+	<!--arg name="world_name" value="$(find nearest_frontier_planner)/launch/includes/worlds/testmap_obstacle.world"/-->
+	<arg name="world_name" value="$(find nearest_frontier_planner)/launch/includes/worlds/map1.world"/> <!--house.world"/-->
+	<!--arg name="world_name" value="/usr/share/gazebo-2.2/worlds/frontier.world"/-->
+</include>
+
+<include file="$(find nearest_frontier_planner)/launch/includes/move_base_safe.launch"/>
+
+<include file="$(find nearest_frontier_planner)/launch/includes/robot_launch_frontier.xml">
+	<arg name="init_pose" value="-x -3.0 -y 3.0 -z 0.0"/><!--initial value is -x -3.0 -y 2.0 -z 0.0-->
+</include>
+
+<node pkg="rviz" type="rviz" name="rviz" args="-d $(find nearest_frontier_planner)/launch/includes/rviz_config/single_frontier.rviz"/>
+
+<!--include file="$(find nearest_frontier_planner)/launch/nearest_frontier_planner.launch"/-->
+
+</launch>
+
+
+
