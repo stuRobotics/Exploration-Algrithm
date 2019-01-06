@@ -1,6 +1,8 @@
 # Exploration-Algrithm
 
-## How to run this project?
+## GFEexploration
+
+### How to run this project?
 
 clone it into your working space and use compile it
 ```Bash
@@ -21,4 +23,6 @@ roslaunch explore_lite explore.launch
 ```
 now you can see the robot is running and mapping
 
-## 
+### About some details
+
+1.the GFE exploration is base on Greedy-frontier exploration strategy which according to this git: https://github.com/hrnr/m-explore, 
