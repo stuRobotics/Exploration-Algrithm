@@ -55,14 +55,14 @@ rosrun using_markers text
   <resolution>0.01</resolution>
 </range>
 ```
-5.You can change the weight of frontier information(frontier size) and the weight of frontier distance by changing this in explore.cpp:
+5.You can change the weight of frontier information(frontier size) and the weight of frontier distance by changing this in explore.launch:
 ```HTML
 <param name="potential_scale" value="3.0"/><!--the weight of frontier distance-->
 <param name="gain_scale" value="0.0"/><!--the weight of frontier information-->
 ```
-6.Since the exploration goal is chosen according to our map, and the optimal exploration sequence is calculated by simulated annealing algorithm, you can change them in explore.cpp:
+6.Since the exploration goal is chosen according to our map, and the optimal exploration sequence is calculated by simulated annealing algorithm, you can change them in explore.cpp, and the variable ox, oy is the length and width of the exploration area:
 ```C++
+double ox=0,oy=0;
 case 0: px=-5.642+ox;py=5.1908+oy;break;
 case 1: px=-2.2746+ox;py=4.8702+oy;break;
 ```
-# `To be continue ...`
