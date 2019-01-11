@@ -25,6 +25,6 @@ now you can see the robot is running and mapping
 
 ### About some details
 
-1.the GFE exploration is base on Greedy-frontier exploration strategy which according to this git: https://github.com/hrnr/m-explore, 
+1.the GFE exploration is base on Greedy-frontier exploration strategy which according to this git: https://github.com/hrnr/m-explore
 
 # `To be continue ...`
