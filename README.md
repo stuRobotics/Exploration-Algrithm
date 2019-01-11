@@ -4,33 +4,36 @@
 
 ### How to run this project?
 
-clone it into your working space and use compile it
+1. Clone it into your working space and use compile it
 ```Bash
 cd ~/XX_ws
 catkin_make
 ```
-then add it to the source
+2. Then add it to the source
 ```Bash
 source ~/XX_ws/devel/setup.bash
 ```
-after this, you can run the command bellow to see the simulation environment and the auto exploration process
+3. After this, you can run the command bellow to see the simulation environment and the auto exploration program
 ```Bash
 roslaunch nearest_frontier_planner single_simulated_frontier.launch
 ```
-in a new terminal, run
+4. In a new terminal, run
 ```Bash
 roslaunch explore_lite explore.launch
 ```
-in another new terminal, run
+now you can see the robot is running and mapping
+
+5. In another new terminal, run
 ```Bash
 rostopic echo /route_topic
 ```
-then You can see the total time and total path length at present in this terminal,
-open another new terminal, run
+then You can see the total time and total path length at present in this terminal
+
+6. Open another new terminal, run
 ```Bash
 rosrun using_markers text
 ```
-now you can see the robot is running and mapping
+7. In rviz, add visualization by three topic: /trajectory, /Line and /PointMarker, in this case you'll see the trajectory and current goal as well as current scope of exploration
 
 ### About some details
 
