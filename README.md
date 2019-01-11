@@ -35,5 +35,13 @@ now you can see the robot is running and mapping
 ```HTML
 <arg name="world_name" value="$(find nearest_frontier_planner)/launch/includes/worlds/map1.world"/>
 ```
+4.You can change the range of the sensor by changing this in single_simulated_frontier.launch:
+```XML
+<range>
+  <min>0.1</min>
+  <max>6</max><!--this is what you're gona change-->
+  <resolution>0.01</resolution>
+</range>
+```
 
 # `To be continue ...`
