@@ -21,11 +21,20 @@ in a new terminal, run
 ```Bash
 roslaunch explore_lite explore.launch
 ```
+in another new terminal, run
+```Bash
+rostopic echo /route_topic
+```
+then You can see the total time and total path length at present in this terminal,
+open another new terminal, run
+```Bash
+rosrun using_markers text
+```
 now you can see the robot is running and mapping
 
 ### About some details
 
-1.The GFE exploration is base on Greedy-frontier exploration strategy which according to this git: https://github.com/hrnr/m-explore
+1.The "explore" package is about GFE exploration which is base on Greedy-frontier exploration strategy which according to this git: https://github.com/hrnr/m-explore
 
 2.You can change the robot's initial position by changing this in single_simulated_frontier.launch:
 ```HTML
