@@ -27,9 +27,13 @@ now you can see the robot is running and mapping
 
 1.The GFE exploration is base on Greedy-frontier exploration strategy which according to this git: https://github.com/hrnr/m-explore
 
-2.You can change the robot's initial position by changing the test in single_simulated_frontier.launch:
+2.You can change the robot's initial position by changing this in single_simulated_frontier.launch:
 ```HTML
 <arg name="init_pose" value="-x -3.0 -y 3.0 -z 0.0"/>
+```
+3.You can change the exploration map/environment by changing this in single_simulated_frontier.launch:
+```HTML
+<arg name="world_name" value="$(find nearest_frontier_planner)/launch/includes/worlds/map1.world"/>
 ```
 
 # `To be continue ...`
