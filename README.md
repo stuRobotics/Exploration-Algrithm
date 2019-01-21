@@ -9,6 +9,7 @@
 cd ~/XX_ws
 catkin_make
 ```
+Ps: You might get some warning when you compile it, it's because some head files may hasn's been created in your package, in this case you can try to `compile it more than once` and it will skip some of those files and finish the whole compile process then creat those files automatically. In other word, if you keep compiling it more than once, it will be sucessful ultimately.
 2.Then add it to the source:
 ```Bash
 source ~/XX_ws/devel/setup.bash
